@@ -1,0 +1,62 @@
+{
+  "pkgName": "FabricBaseChaincode",
+  "appPtfType": 3,
+  "ccLanguage": 2,
+  "mainPath": "bsnBaseCC",
+  "ccName": "bsnBaseCCEN",
+  "initParam": "",
+  "pkgVersion": "1.0.0",
+  "pkgFee": 0,
+  "publishUser": "Beijing Red Date Technoligy Co., Ltd.",
+  "pkgDesc": "This is a basic chaincode package instance, which provides contracts for basic operations such as adding, deleting, modifying and querying  data. You can further expand more functions based on it according to your business requirements.",
+  "funcs": [
+    {
+      "chaincodeViewName": "SaveData",
+      "chaincodeFunc": "set",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "UpdateData",
+      "chaincodeFunc": "update",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "RemoveData",
+      "chaincodeFunc": "delete",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "QueryData",
+      "chaincodeFunc": "get",
+      "chaincodeFuncType": "2",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "Query historical data",
+      "chaincodeFunc": "getHistory",
+      "chaincodeFuncType": "2",
+      "pkgType": "saas",
+      "nodes": []
+    }
+  ],
+  "roles": [
+    {
+      "roleName": "SysAdmin",
+      "appDesc": "This role owns adding, deleting, modifying and querying operation rights.",
+      "funcs": [
+        "set",
+        "update",
+        "delete",
+        "get",
+        "getHistory"
+      ]
+    }
+  ]
+}
