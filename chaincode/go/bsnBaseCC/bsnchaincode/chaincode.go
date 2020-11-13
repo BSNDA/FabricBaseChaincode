@@ -1,11 +1,11 @@
 package bsnchaincode
 
 import (
-	"bsnBaseCC/models"
-	"bsnBaseCC/utils"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/BSNDA/FabricBaseChaincode/chaincode/go/bsnBaseCC/models"
+	"github.com/BSNDA/FabricBaseChaincode/chaincode/go/bsnBaseCC/utils"
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	"github.com/hyperledger/fabric/protos/peer"
 	strings2 "strings"
