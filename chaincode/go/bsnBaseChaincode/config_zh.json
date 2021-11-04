@@ -1,0 +1,86 @@
+{
+  "pkgName": "Fabric-secp256r1通用数据链码包",
+  "appPtfType":8,
+  "ccLanguage":2,
+  "mainPath":"bsnBaseChaincode",
+  "ccName": "bsnBaseCC",
+  "initParam":"",
+  "pkgVersion": "1.0.0",
+  "pkgFee":0,
+  "publishUser":"北京红枣科技有限公司",
+  "pkgDesc":"通用数据链码包，是我们为应用开发者提供对业务数据进行增删改查基本操作的链码。应用开发者可以在此链码包的基础上根据应用业务需求进一步拓展链码功能",
+  "funcs": [
+    {
+      "chaincodeViewName": "保存数据",
+      "chaincodeFunc": "set",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "保存数据事件",
+      "chaincodeFunc": "event_set",
+      "chaincodeFuncType": "3",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "更新数据",
+      "chaincodeFunc": "update",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "更新数据事件",
+      "chaincodeFunc": "event_update",
+      "chaincodeFuncType": "3",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "删除数据",
+      "chaincodeFunc": "delete",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "删除数据事件",
+      "chaincodeFunc": "event_delete",
+      "chaincodeFuncType": "3",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "获取数据",
+      "chaincodeFunc": "get",
+      "chaincodeFuncType": "2",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "获取历史数据",
+      "chaincodeFunc": "getHistory",
+      "chaincodeFuncType": "2",
+      "pkgType": "saas",
+      "nodes": []
+    }
+  ],
+  "roles": [
+    {
+      "roleName": "系统管理员",
+      "appDesc": "包含保存数据、更新数据、删除数据、获取数据、获取历史数据五个基本数据操作权限以及保存数据、更细数据、删除数据的事件监听权限",
+      "funcs": [
+        "set",
+        "update",
+        "delete",
+        "event_set",
+        "event_update",
+        "event_delete",
+        "get",
+        "getHistory"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "pkgName": "FabricBaseChaincode",
+  "appPtfType": 3,
+  "ccLanguage": 2,
+  "mainPath": "chaincode-demo",
+  "ccName": "bsnBaseCC",
+  "initParam": "",
+  "pkgVersion": "1.0.0",
+  "pkgFee": 0,
+  "publishUser": "北京红枣科技有限公司",
+  "pkgDesc": "Fabric基础链码包，包含链上数据保存、删除、查询、查询历史记录等功能，可以参考链码扩展自已的业务。",
+  "funcs": [
+    {
+      "chaincodeViewName": "保存数据",
+      "chaincodeFunc": "Set",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "删除数据",
+      "chaincodeFunc": "Delete",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "查询数据",
+      "chaincodeFunc": "Query",
+      "chaincodeFuncType": "2",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "查询历史记录",
+      "chaincodeFunc": "History",
+      "chaincodeFuncType": "2",
+      "pkgType": "saas",
+      "nodes": []
+    }
+  ],
+  "roles": [
+    {
+      "roleName": "SysAdmin",
+      "appDesc": "包含所有功能的角色。",
+      "funcs": [
+        "Set",
+        "Delete",
+        "Query",
+        "History"
+      ]
+    }
+  ]
+}
